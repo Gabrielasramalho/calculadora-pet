@@ -7,35 +7,52 @@
     <title>Calculadora PET</title>
 </head>
 <body>
+  <link rel="stylesheet" href="style.css">
+  
 
 <h1> 
-    Quanto custa ter um cachorro? 
+    Quanto custa ter um cachorro? 🐶
 </h1>
 <p> Após adotar ou comprar um cachorro de porte 
-    <select>
-    <option pequeno="pequeno">Pequeno</option> 
-    <option medio="medio">Médio</option> 
-    <option grande="grande">Grande</option> 
+  <select class="porte">
+    <!--observar mudança no select -->
+    <option value=""></option> 
+    <option value="pequeno">Pequeno (3 a 5kg) </option> 
+    <option value="medio">Médio (10 a 25 kg)</option> 
+    <option value="grande">Grande (25 a 40 kg)</option> 
    </select>
 
   <select class="vacina"> 
-    <option class="vacinado">com</option> 
-    <option class="naoVacinado">sem</option>      
+      <option value="naoVacinado">💉sem</option>  
+        <option value="vacinado">💉com</option>            
   </select> 
 
- as primeiras doses de vacinas já aplicadas, você irá gastar no mínimo <output>...</output> em um mês. 
-</p>
+ as primeiras doses de vacinas aplicadas,<span class="destaque">você irá gastar no mínimo....</span> </p> 
+ 
+ <div class="valorMinimo">
+ <p> <b><output data-texto="valorMinimo"></output> em um mês. </b></p>
+ <a onclick="alterarPopup()"> 💡</a>
+ </div>
+
+ <div class="popup" id="popup-1"> 
+      <div class="conteudoPopup">
+   <div class="botaoFechar" onclick="alterarPopup()">&times;</div>
+   <p>Estes valores são referentes a idade adulta do PET.</p>
+   </div>
+  </div>
+ 
+
 
 <section class="explicacao"> 
-
+  
     <h2> Entenda os custos </h2>
 
-    <p> <b>Cachorros de porte <output>...</output> consomem em média <output> ...</output> em ração. O valor pode variar de acordo com a marca e qualidade da ração. </b> </p>
+    <p> <b>Cachorros de porte <output  data-texto="porte">...</output> consomem em média <output  data-texto="consumoRacao"> ...</output> em ração. O valor pode variar de acordo com a marca e qualidade da ração. </b> </p>
 
    <div class="vacinado">
      <p> Mesmo que você compre ou adote um cachorro já vacinado, é importante ter em mente que a vacinação deve ser aplicada anualmente, o que gera um custo de aproximadamente <b>R$ 410, 00 por ano,</b> sendo: </p>
      <p> Polivalente (R$ 100), Raiva (R$ 80), Gripe (R$ 110) e Giardia (R$ 120). </p>
-   </div>
+    </div>
  
    <div class="naoVacinado"> 
      <p> <b>Para as primeiras doses de vacina, você irá gastar em média R$ 410, 00 </b></p> 
@@ -73,7 +90,7 @@
   
    <p> <b> Visita ao veterinário:</b> R$ 100 a 150 em média.</p>
 
-   <p>Esse valor pode variar de acordo com a raça, saúde do animal, especialidade do serviço e localização.</p>
+   <p>O valor pode variar de acordo com a raça, saúde do animal, especialidade do serviço e localização.</p>
 
    <p>Algumas clínicas em São Paulo, por exemplo, chegam a cobrar R$ 300,00 por consulta, enquanto clinicas populares podem oferecer preços mais acessíveis, de  R$ 30 a 50. </p>  
 
@@ -81,11 +98,10 @@
 
 
 <footer>
- <p> Projeto realizado para o Master em Jornalismo de dados do Insper.</p> 
 
- <p> <b>Realização:</b> Gabriela Soares <b>Orientação: </b> Carol Rozendo, Rodrigo Menegat, Vinicius Sueiro</p>
+  <p>Por: Gabriela Soares 
 
- <p> <b>Fontes:</b>  Instituto Pet Brasil, Betway Insider, Patas da Casa, Neon, Casa Prática Qualitá, Buscapé. </p>
+ Fontes:Instituto Pet Brasil, Betway Insider, Patas da Casa, Neon, Casa Prática Qualitá, Buscapé. </p>
 
 </footer>
 
