@@ -14,15 +14,20 @@ font-family: fira Sans;}
    display: none;
  }
 
- h2 {color: black;
-    
+ h2 {color: #7CA0F8;    
     text-align: center;
    }
-  b {background-color: #FCF897;
-    font-weight: normal;}
-
-   h3 {color: black;
-    text-align: center;
+  
+   
+    .nota{background-color: #FCF897;
+      text-align: center;
+      }
+    output{
+      font-weight: bold;
+    color: #7CA0F8;}
+  
+   h3 {color: #7CA0F8;;
+    text-align: start;
     
    }
       p { color: white;}
@@ -78,7 +83,8 @@ font-family: fira Sans;}
          position: relative;
          cursor: pointer;
          align-items: center;  
-         border-color: #FCF897;                   
+         border-color: #FCF897; 
+         font-weight: bold;                  
        }
       button[disabled]{ 
         opacity: 0.5;
@@ -105,11 +111,9 @@ transform:translater(-50%,-50%) scale(0);
  text-align: justify;
   box-sizing: border-box;
   }
+img { display: flex; }
 
-.conteudoPopup > h2 {
-    text-align: justify;
-    color: #7CA0F8;
-}
+
  li{list-style-type: square;
 }
 .conteudoPopup > h3 {
