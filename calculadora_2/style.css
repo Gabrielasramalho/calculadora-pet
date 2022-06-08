@@ -8,9 +8,12 @@ body {
 font-family: fira Sans;}
  h1  { 
     text-align: center;
-    color: #FCF897;
-    
+    color: #FCF897;     
  } 
+ .nVisivel { 
+   display: none;
+ }
+
  h2 {color: black;
     
     text-align: center;
@@ -60,24 +63,27 @@ font-family: fira Sans;}
     font-size: large;}
 
      footer {
-       
-	     position: fixed;
-	     width: 90%;
-        text-align: center; 
-        bottom: 0%;      
-      	}
+	 position: fixed;
+	 bottom: 0;
+     margin: 0%; 
+     background-color: #7CA0F8; 
 
+	}
 /*? como ajeitar a posição do popup*/
-     a { 
+     button { 
           color: #7CA0F8; 
          background-color: #FCF897;
          padding: 4px;
          display: flexbox;
          position: relative;
          cursor: pointer;
-         align-items: center;
-                     
+         align-items: center;  
+         border-color: #FCF897;                   
        }
+      button[disabled]{ 
+        opacity: 0.5;
+      }
+
     .popup .conteudoPopup{ 
     display: none;
     top: 30%;
@@ -89,8 +95,7 @@ font-family: fira Sans;}
     z-index: 2;
     box-sizing: border-box;
     padding: 5%;  
-    margin-bottom: 8%;
-  }
+      }
 
 .conteudoPopup > p{ 
 display: none;
@@ -100,7 +105,7 @@ transform:translater(-50%,-50%) scale(0);
  text-align: justify;
   box-sizing: border-box;
   }
-a.link{background-color: white;}
+
 .conteudoPopup > h2 {
     text-align: justify;
     color: #7CA0F8;
@@ -113,12 +118,11 @@ a.link{background-color: white;}
 .conteudoPopup > a { 
     display: flexbox;
     background-color: #fff;}
- 
 
 .popup .botaoFechar {
     display: flexbox;
     cursor: pointer;
-    left: 10px;
+    right: 10px;
     top: 5%;
     width: 18px;
     height: 18px;

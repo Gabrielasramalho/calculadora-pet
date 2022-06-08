@@ -14,78 +14,74 @@
     Quanto custa ter um cachorro? 🐶
 </h1>
 <p> Após adotar ou comprar um cachorro de porte 
-   <select class="porte">
-      <!--observar mudança no select -->
+      <select class="porte">  <!--observar mudança no select -->
       <option value="">🐶...</option> 
       <option value="pequeno"> Pequeno (3 a 5kg) </option> 
      <option value="medio">Médio (10 a 25 kg)</option> 
      <option value="grande">Grande (25 a 40 kg)</option> 
-    </select>
-
+     </select> 
      <select class="vacina"> 
         <option value="naoVacinado">💉sem</option>  
         <option value="vacinado">💉com</option>            
-      </select> 
-
-    as primeiras doses das vacinas aplicadas,<span class="destaque">você irá gastar no mínimo....</span> <div class="valorMinimo">
-      <p> <b><output data-texto="valorMinimo"></output> </b> 
-      </p> 
-      </div>
- </p> 
+      </select> as primeiras doses das vacinas aplicadas,<span class="destaque">você irá gastar no mínimo....</span> <div class="valorMinimo">
+          <p> <b><output data-texto="valorMinimo"></output> </b> 
+          </p> 
+    </div>
+   </p> 
     
-     <a class="1" onclick="alterarPopup()"> 💡De onde vêm os custos? </a>
+         <button disabled class="habilitar" onclick="alterarPopup()"> 💡De onde vêm os custos? </button>
 
          <div class="popup" id="popup-1"> 
-        <div class="conteudoPopup">
+         <div class="conteudoPopup">
          <div class="botaoFechar" onclick="alterarPopup()">&times;</div>
 
          <h2>Estes custos são referentes aos gastos durante a fase adulta.</h2>
          
          <p><b>Afinal, se ele ainda é um filhote, em breve ficará adulto </b> - a fase de crescimento físico é de 6 a 9 meses, variando de  acordo com a raça e tamanho, <a class="link" href="https://www.aaha.org/aaha-guidelines/life-stage-canine-2019/canine-life-stage-definitions/" target="_blank"> segundo  Associação Americana de Hospitais Animais.</a></p>
+
          <p>Cachorros de porte <output  data-texto="porte"> xxx</output> consomem em média <output  data-texto="consumoRacao"> ...</output> em ração. O valor pode variar de acordo com a marca e qualidade da ração.</p>
           
-         <div class="vacinado">
-         <p> Mesmo que você compre ou adote um cachorro já vacinado, é importante ter em mente que a vacinação deve ser aplicada anualmente, o que gera um custo de aproximadamente <b>R$ 410, 00 por ano,</b> sendo: </p>
+            <div class="vacinado nVisivel" >
+               <p> Mesmo que você compre ou adote um cachorro já vacinado, é importante ter em mente que a vacinação deve ser aplicada anualmente, o que gera um custo de aproximadamente <b>R$ 410, 00 por ano,</b> sendo: </p>
 
-         <ol>
-           <li>Polivalente (R$ 100)</li>
-           <li>Raiva (R$ 80) </li>
-           <li>Gripe (R$ 110)</li>
-           <li>Giardia (R$ 120)</li>
-         </ol>
-        
-         </div>
+               <ol>
+                  <li>Polivalente (R$ 100)</li>
+                 <li>Raiva (R$ 80) </li>
+                 <li>Gripe (R$ 110)</li>
+                 <li>Giardia (R$ 120)</li>
+               </ol>        
+             </div>
  
-         <div class="naoVacinado"> 
-          <p> <b>Para as primeiras doses de vacina, você irá gastar em média R$ 410, 00. </b> Sendo:</p> 
+            <div class="naoVacinado"> 
+              <p> <b>Para as primeiras doses de vacina, você irá gastar em média R$ 410, 00. </b> Sendo:</p> 
 
-          <ol>
-            <li>Polivalente (R$ 100)</li>
-            <li>Raiva (R$ 80) </li>
-            <li>Gripe (R$ 110)</li>
-            <li>Giardia (R$ 120)</li>
-          </ol>
-
-
-         <p> <b>  Todas as vacinas devem ser reforçadas anualmente, por tanto prepare o bolso para essa despesa!</b> </p>
-        </div>
-        <h2> Outros gastos para ficar de olho!</h2> 
-        <p> Os custos com um PET podem variar bastante conforme as  necessidades do animal e padrão de vida oferecido pelo tutor.  Os principais valores para se atentar, são:</p>
-
-        <img src="casinha-de-cachorro 1.svg" </img> <h2> Estrutura:</h2> 
-
-        <p><b>Caminha:</b> R$ 75, 00 a R$ 600,00 </p>      
-
-       <p> <b>Brinquedo:</b> R$ 25,00 a R$ 50,00 em média. </p>
-
-       <p> <b>Pote de ração e água:</b> R$ 3,62 a R$ 392,10 </p>
-
-              <p> <b>Coleira e guia:</b>  R$ 11, 00 a 590,15 </p>
+              <ol>
+                <li>Polivalente (R$ 100)</li>
+                <li>Raiva (R$ 80) </li>
+                <li>Gripe (R$ 110)</li>
+                <li>Giardia (R$ 120)</li>
+              </ol>
 
 
-              <img src="veterinario_sgv.svg" </img>
-              <h2> Saúde e qualidade de vida do PET:</h2>
-              <p> <b>Banho e tosa:</b>  R$ 50 a 150</p>
+                <p> <b>  Todas as vacinas devem ser reforçadas anualmente, por tanto prepare o bolso para essa despesa!</b> </p>
+               </div>
+               <h2> Outros gastos para ficar de olho!</h2> 
+               <p> Os custos com um PET podem variar bastante conforme as  necessidades do animal e padrão de vida oferecido pelo tutor.  Os principais valores para se atentar, são:</p>
+
+                <img src="casinha-de-cachorro 1.svg" </img> <h2> Estrutura:</h2> 
+
+               <p><b>Caminha:</b> R$ 75, 00 a R$ 600,00 </p>      
+
+               <p> <b>Brinquedo:</b> R$ 25,00 a R$ 50,00 em média. </p>
+
+               <p> <b>Pote de ração e água:</b> R$ 3,62 a R$ 392,10 </p>
+
+               <p> <b>Coleira e guia:</b>  R$ 11, 00 a 590,15 </p>
+
+
+               <img src="veterinario_sgv.svg" </img>
+               <h2> Saúde e qualidade de vida do PET:</h2>
+               <p> <b>Banho e tosa:</b>  R$ 50 a 150</p>
 
                <p> <b>Banho em casa: </b> </p> <p>aproximadamente R$ 30,00 mensais para a compra de shampoo específico para cachorros.</p>
    
@@ -93,21 +89,18 @@
                  
                <p> <b> Visita ao veterinário:</b> R$ 100 a 150 em média.</p>
 
-       <p>O valor pode variar conforme a raça, saúde do animal, especialidade do serviço e localização.</p>
+               <p>O valor pode variar conforme a raça, saúde do animal, especialidade do serviço e localização.</p>
 
-       <p>Algumas clínicas em São Paulo, por exemplo, chegam a cobrar R$ 300,00 por   consulta, enquanto clinicas populares podem oferecer preços mais acessíveis, de  R$ 30 a 50. </p>  
+               <p>Algumas clínicas em São Paulo, por exemplo, chegam a cobrar R$ 300,00 por   consulta, enquanto clinicas populares podem oferecer preços mais acessíveis, de  R$ 30 a 50. </p>  
+            </div>
+         </div>
+        
+        
+           <footer>
+              <p>Por: Gabriela Soares | Orientação: Carol Rozendo, Rodrigo Menegat, Tiago Maranhão, Vinicius Sueiro. | Fontes:Instituto Pet Brasil, Betway Insider, Patas da Casa, Neon, Casa Prática Qualitá, Buscapé. </p>
+            </footer>
 
-      </div>
-  </div>
-<footer>
-
-  <p>Por: Gabriela Soares 
-
- Fontes:Instituto Pet Brasil, Betway Insider, Patas da Casa, Neon, Casa Prática Qualitá, Buscapé. </p>
-
-</footer>
-
-<script src="app.js"> </script>
+              <script src="app.js"> </script>
 
 </body>
 </html>
