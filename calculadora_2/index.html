@@ -14,40 +14,33 @@
     Quanto custa ter um cachorro? 🐶
 </h1>
 <p> Após adotar ou comprar um cachorro de porte 
-  <select class="porte">
-    <!--observar mudança no select -->
-    <option value=""></option> 
-    <option value="pequeno">Pequeno (3 a 5kg) </option> 
-    <option value="medio">Médio (10 a 25 kg)</option> 
-    <option value="grande">Grande (25 a 40 kg)</option> 
-   </select>
+   <select class="porte">
+      <!--observar mudança no select -->
+      <option value=""></option> 
+      <option value="pequeno">Pequeno (3 a 5kg) </option> 
+     <option value="medio">Médio (10 a 25 kg)</option> 
+     <option value="grande">Grande (25 a 40 kg)</option> 
+    </select>
 
-  <select class="vacina"> 
-      <option value="naoVacinado">💉sem</option>  
+     <select class="vacina"> 
+        <option value="naoVacinado">💉sem</option>  
         <option value="vacinado">💉com</option>            
-  </select> 
+      </select> 
 
- as primeiras doses de vacinas aplicadas,<span class="destaque">você irá gastar no mínimo....</span> </p> 
+    as primeiras doses das vacinas aplicadas,<span class="destaque">você irá gastar no mínimo....</span> <div class="valorMinimo">
+      <p> <b><output data-texto="valorMinimo"></output> </b> 
+      </p> 
+      </div>
+ </p> 
  
- <div class="valorMinimo">
- <p> <b><output data-texto="valorMinimo"></output> em um mês. </b></p>
- <a onclick="alterarPopup()"> 💡</a>
- </div>
+ 
+  
+ <a onclick="alterarPopup()"> 💡De onde vêm os custos? </a>
 
- <div class="popup" id="popup-1"> 
+  <div class="popup" id="popup-1"> 
       <div class="conteudoPopup">
    <div class="botaoFechar" onclick="alterarPopup()">&times;</div>
-   <p>Estes valores são referentes a idade adulta do PET.</p>
-   </div>
-  </div>
- 
-
-
-<section class="explicacao"> 
-  
-    <h2> Entenda os custos </h2>
-
-    <p> <b>Cachorros de porte <output  data-texto="porte">...</output> consomem em média <output  data-texto="consumoRacao"> ...</output> em ração. O valor pode variar de acordo com a marca e qualidade da ração. </b> </p>
+   <p>Cachorros de porte <output  data-texto="porte"> xxx</output> consomem em média <output  data-texto="consumoRacao"> ...</output> em ração. O valor pode variar de acordo com a marca e qualidade da ração.</p>
 
    <div class="vacinado">
      <p> Mesmo que você compre ou adote um cachorro já vacinado, é importante ter em mente que a vacinação deve ser aplicada anualmente, o que gera um custo de aproximadamente <b>R$ 410, 00 por ano,</b> sendo: </p>
@@ -94,7 +87,12 @@
 
    <p>Algumas clínicas em São Paulo, por exemplo, chegam a cobrar R$ 300,00 por consulta, enquanto clinicas populares podem oferecer preços mais acessíveis, de  R$ 30 a 50. </p>  
 
-</section>
+   </div>
+  </div>
+ 
+
+
+
 
 
 <footer>

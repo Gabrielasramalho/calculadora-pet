@@ -1,0 +1,133 @@
+
+body {
+    align-items: center;
+    background-color: #7CA0F8;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+font-family: fira Sans;}
+ h1  { 
+    text-align: center;
+    color: #FCF897;
+    
+ } 
+ h2 {color: black;
+    
+    text-align: center;
+   }
+  b {background-color: #FCF897;
+    font-weight: normal;}
+
+   h3 {color: black;
+    text-align: center;
+    
+   }
+      p { color: white;}
+  .explicacao { display: flexbox;
+      background-color: #fff;}
+
+      .explicacao > p {
+        padding-left: 4%;
+        padding-right: 4%;
+     color: #484747;
+     }
+     
+   .naoVacinado > p { color: #484747;
+    padding-left: 4%;
+    padding-right: 4%;}
+   .vacinado > p { color: #484747;
+    padding-left: 4%;
+    padding-right: 4%;}
+    
+
+     select{ 
+          background-color: #fff;    
+          color:#484747;
+          border-radius: 5%;
+         }
+    
+     .destaque { color: #FCF897; }
+
+      .valorMinimo { background-color: #FCF897;
+         max-width: 200px;
+         border-radius: 5%;}
+
+      .valorMinimo > p { color:#7CA0F8;
+      text-align: center;
+      padding: 2%;
+    font-size: large;}
+
+     footer {
+	 position: fixed;
+	 bottom: 0;
+     margin: 0%; 
+     background-color: #7CA0F8; 
+
+	}
+
+/*? como ajeitar a posição do popup*/
+     a { 
+         background-color: #FCF897;
+         padding: 4px;
+         display: flexbox;
+         position: relative;
+         cursor: pointer;
+         align-items: center;
+         color: #7CA0F8;             
+       }
+    .popup .conteudoPopup{ 
+    display: none;
+    top: 30%;
+    left: 20px;
+    transform:translater(-50%,-50%) scale(0);
+    background: #fff;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    box-sizing: border-box;
+           }
+
+.conteudoPopup > p{ 
+display: none;
+transform:translater(-50%,-50%) scale(0);
+ color: #000;
+ font-size: 15px;
+ text-align: center;
+ 
+ box-sizing: border-box;
+}
+.popup .botaoFechar {
+    display: flexbox;
+    cursor: pointer;
+    right: 10px;
+    top: 5%;
+    width: 18px;
+    height: 18px;
+    background: #7CA0F8;
+    padding: 2%;
+    font-size: 25px;
+    font-weight:600;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+ .popup.ativa .fundo  {
+     display: block;
+     transition: all 300ms ease-in-out;
+    transform:translater(-50%,-50%) scale(1);
+ }
+
+ .popup.ativa .conteudoPopup { 
+     display: block;
+     transition: all 300ms ease-in-out;
+    transform:translater(-50%,-50%) scale(1);
+
+ }
+ .popup.ativa .conteudoPopup > p{ 
+    display: block;
+    transition: all 300ms ease-in-out;
+   transform:translater(-50%,-50%) scale(1);
+
+}

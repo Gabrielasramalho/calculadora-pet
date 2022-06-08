@@ -18,7 +18,6 @@ let porte = { "pequeno": 70,
 
 //busca o elemento <output> e coloca o valor declarado no porte e vacina
  let saidavalorMinimo = document.querySelector( "output[data-texto = 'valorMinimo'"); 
- let saidaPorte = document.querySelector( "output.porte")
  let saidaconsumoRacao = document.querySelector( "output.consumoRacao")
 
  //detectar mudanças no select - entrada porte é uma entrada no querySelector, dentro do objeto entrada.porte coloca a função de add evento
@@ -28,13 +27,26 @@ let porte = { "pequeno": 70,
   entradaPorte.value] + vacina[entradaVacina.value]   
 
   //calcular os valores e texto que precisam aparecer nos outputs 
-  saidavalorMinimo.textContent = "R$" + resultado 
-  }
+  saidavalorMinimo.textContent = "R$" + resultado + " em um mês."
+    }
+      
+    let saidaPorte = document.querySelector( "output[data-texto = 'porte'")
+    
+     // saida do elemento data "porte" 
+       
+  
   // mandando ouvir evento!!  
  entradaPorte.addEventListener(
    "change", checar )    
   entradaVacina.addEventListener(
     "change", checar)  
+
+
+
+
+
+
+
 
  
 // declarar o bloco explicacao
@@ -42,7 +54,6 @@ let porte = { "pequeno": 70,
 // fazer aparecer uma resposta para .vacinado e outra p/ ..naoVacinado 
 
 //colocar popup na resposta para aparecer uma notinha complementar 
-
 function alterarPopup() { 
   //pega o elemento da classe popup1 e cria uma classe ativa
     document.getElementById("popup-1").classList.toggle("ativa");
