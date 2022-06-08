@@ -31,7 +31,8 @@ font-family: fira Sans;}
         padding-right: 4%;
      color: #484747;
      }
-     
+    
+    
    .naoVacinado > p { color: #484747;
     padding-left: 4%;
     padding-right: 4%;}
@@ -44,6 +45,7 @@ font-family: fira Sans;}
           background-color: #fff;    
           color:#484747;
           border-radius: 5%;
+          text-align: center;
          }
     
      .destaque { color: #FCF897; }
@@ -66,14 +68,15 @@ font-family: fira Sans;}
 	}
 
 /*? como ajeitar a posição do popup*/
-     a { 
+     a.1 { 
+          color: #7CA0F8; 
          background-color: #FCF897;
          padding: 4px;
          display: flexbox;
          position: relative;
          cursor: pointer;
          align-items: center;
-         color: #7CA0F8;             
+                     
        }
     .popup .conteudoPopup{ 
     display: none;
