@@ -60,11 +60,12 @@ font-family: fira Sans;}
     font-size: large;}
 
      footer {
-	   position: fixed;
-	   bottom: 0;   
-     margin-top: 100%;  
-
-	}
+       
+	     position: fixed;
+	     width: 90%;
+        text-align: center; 
+        bottom: 0%;      
+      	}
 
 /*? como ajeitar a posição do popup*/
      a { 
@@ -112,7 +113,7 @@ a.link{background-color: white;}
 .conteudoPopup > a { 
     display: flexbox;
     background-color: #fff;}
- sgv{width: 35px; height: 35px; viewbox: 0 0 35 35; }
+ 
 
 .popup .botaoFechar {
     display: flexbox;
