@@ -48,7 +48,7 @@ font-family: fira Sans;}
           text-align: center;
          }
     
-     .destaque { color: #FCF897; }
+     
 
       .valorMinimo { background-color: #FCF897;
          max-width: 200px;
@@ -68,7 +68,7 @@ font-family: fira Sans;}
 	}
 
 /*? como ajeitar a posição do popup*/
-     a.1 { 
+     a { 
           color: #7CA0F8; 
          background-color: #FCF897;
          padding: 4px;
@@ -88,17 +88,32 @@ font-family: fira Sans;}
     height: auto;
     z-index: 2;
     box-sizing: border-box;
-           }
+    padding: 5%;  
+    margin-bottom: auto;
+  }
 
 .conteudoPopup > p{ 
 display: none;
 transform:translater(-50%,-50%) scale(0);
  color: #000;
  font-size: 15px;
- text-align: center;
- 
- box-sizing: border-box;
+ text-align: justify;
+  box-sizing: border-box;
+  }
+a.link{background-color: #fff;}
+.conteudoPopup > h2 {
+    text-align: justify;
+    color: #7CA0F8;
 }
+ li{list-style-type: square;
+}
+.conteudoPopup > h3 {
+    color: #7CA0F8;
+}
+.conteudoPopup > a { 
+    display: flexbox;
+    background-color: #fff;}
+
 .popup .botaoFechar {
     display: flexbox;
     cursor: pointer;
